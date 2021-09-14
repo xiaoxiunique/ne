@@ -11,20 +11,38 @@ module.exports = {
     editLinks: false,
     editLinkText: 'Edit this page on GitHub',
     lastUpdated: '最近更新',
-
     nav: [
-      { text: '指南', link: '/' },
+      { text: '指南', link: '/'},
+      { text: 'Noder', link: '/node/'},
+      { text: '设计模式', link: '/dp/' },
     ],
-    sidebar: getGuideSidebar()
+    sidebar: {
+      "/dp": getDpSidebar(),
+      "/node": getNodeSidebar()
+    } 
   }
 }
 
-function getGuideSidebar() {
+function getNodeSidebar() {
+
   return [
     {
-      text: '一些 Node 相关的知识点',
+      text: 'Node 那些事',
       children: [
-        { text: '背景', link: '/' },
+        {
+          text: '概要', link: '/node/index'
+        }
+      ]
+    }
+  ]
+}
+
+function getDpSidebar() {
+  return [
+    {
+      text: '设计模式',
+      children: [
+        { text: 'Test', link: '/dp/index' },
       ]
     }
   ]
