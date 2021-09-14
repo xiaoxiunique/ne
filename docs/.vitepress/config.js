@@ -30,7 +30,7 @@ function getNodeSidebar() {
       text: 'Node 那些事',
       children: [
         {
-          text: '概要', link: '/node/index'
+          text: '概要', link: '/node/'
         }
       ]
     }
@@ -42,7 +42,7 @@ function getDpSidebar() {
     {
       text: '设计模式',
       children: [
-        { text: 'Test', link: '/dp/index' },
+        { text: 'Test', link: '/dp/' },
       ]
     }
   ]
